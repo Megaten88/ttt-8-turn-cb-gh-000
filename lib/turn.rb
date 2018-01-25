@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input.to_i
+  input.to_i - 1
 end
 
 def valid_move?(board, index)
@@ -22,4 +22,10 @@ def position_taken?(board, index)
     return false
   end
   return true
+end
+
+def turn(board)
+  puts "Please enter 1-9:"
+  input = gets.split
+  
 end
